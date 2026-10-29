@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dramei App</title>
+  <link rel="icon" href="LINK">
+  <style>
+    :root {
+      --bg: #0d0d0f;
+      --text: #f2f2f2;
+      --muted: #8a8a93;
+      --btn-bg: #e5e5e5;
+      --btn-bg-hover: #ffffff;
+      --btn-text: #0d0d0f;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 3rem 1.25rem;
+      text-align: center;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 480px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .avatar {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      object-fit: cover;
+      background: #1c1c20;
+      margin-bottom: 1.25rem;
+    }
+
+    h1 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    .description {
+      font-size: 0.95rem;
+      color: var(--muted);
+      margin-bottom: 2rem;
+      line-height: 1.5;
+    }
+
+    .links {
+      list-style: none;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 0.9rem;
+    }
+
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+      width: 100%;
+      padding: 0.9rem 1.1rem;
+      background: var(--btn-bg);
+      color: var(--btn-text);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      border-radius: 14px;
+      transition: transform 0.15s ease, background 0.15s ease;
+    }
+
+    .btn:hover {
+      background: var(--btn-bg-hover);
+      transform: translateY(-2px);
+    }
+
+    .btn img {
+      width: 28px;
+      height: 28px;
+      object-fit: contain;
+      flex-shrink: 0;
+    }
+
+    .btn span {
+      min-width: 0;
+      overflow-wrap: anywhere;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img class="avatar" src="link" alt="Foto de perfil">
+
+    <h1>Dramei App</h1>
+    <p class="description">descrição</p>
+
+    <ul class="links">
+      <li><a class="btn" href="link"><img src="link" alt=""><span>nome botão</span></a></li>
+      <li><a class="btn" href="link"><img src="link" alt=""><span>nome botão</span></a></li>
+      <li><a class="btn" href="link"><img src="link" alt=""><span>nome botão</span></a></li>
+      <li><a class="btn" href="link"><img src="link" alt=""><span>nome botão</span></a></li>
+      <li><a class="btn" href="link"><img src="link" alt=""><span>nome botão</span></a></li>
+    </ul>
+  </div>
+</body>
+</html>
